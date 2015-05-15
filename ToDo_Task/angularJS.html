@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>AngularJS</title>
+
+		<script src="angular.min.js"></script>
+ 		<script src="module.js"></script>
+
+	</head>
+	<body ng-app="myApp">
+		<div >	
+			<form ng-controller="mycontrol" ng-submit="addTask()">
+				<lable for="studentId"> Student Name:</lable>
+					<input type="text" name="studentId" ng-model="kranthi.studentname"><br/>
+				<lable for="id"> Student ID:</lable>
+					<input type="number" name="id" ng-model="kranthi.studentId"><br/>
+				<label for="location">Location:</label>
+					<input type="text" name="location" ng-model="kranthi.location1"><br/>
+					<pre>{{kranthi.studentname}}
+				<input type="submit" ng-hide="!kranthi.studentname" value="submit">
+			
+				<table style="background-color:#8ED6EA" border="2px">
+					<tr>						
+						<th><b>student Name</b></th>
+						<th><b>student Id</b></th>
+						<th><b>location</b></th>
+					</tr>	
+					<tr ng-repeat="data in table">
+						<td>{{data.studentname}}</td>
+						<td>{{data.studentId}}</td>
+		
+						<td>{{data.location1}}</td>
+					</tr>
+				</table>
+			</form>	
+		</div>	
+	</body>
+</html>
