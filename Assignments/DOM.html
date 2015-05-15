@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document Object Model</title>
+	</head>
+	<body>
+		<h2>Welcome to DOM</h2>
+		<div>
+			<form method="post">
+				<label>First Name:</label>
+				<input id="name1"type="text" name="FirstName"/><br/>
+				<label>Last Name:</label>
+				<input id="name2"type="text" name="LastName"/><br/>
+				<label>Password:</label>
+				<input type="password" name="password"/><br/>
+				<label>Date Of Birth:</label>
+				<select id="name3" name="Months">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5" selected>May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+				</select>
+				<select name="date" >
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22" selected>22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				</select>
+				<select name="year">
+				<option value="21">1988</option>
+				<option value="22">1989</option>
+				<option value="23">1990</option>
+				<option value="24" selected>1991</option>
+				<option value="25">1992</option>
+				<option value="26">1993</option>
+				<option value="27">1994</option>
+				</select><br/>
+		
+				<label>Gender:</label>
+				<input id="name3" type="radio" name="Gender" value="Male" checked>Male</input>
+				<input id="name4" type="radio" name="Gender" value="female">Female</input><br/>
+				<input type="button" name="submit"	value="submit" onclick="setFunction(event)">
+
+			</form>
+		</div>
+		<script type="text/javascript">
+			function setFunction(e){
+				var firstName=document.getElementById("name1");
+				var lastName=document.getElementById("name2");
+				//var gender=document.getElementById("name3");
+				//var gender1=document.getElementById("name4");
+				var name1=firstName.value;
+				var name2=lastName.value;
+				//var name3=gender.value;
+				//var name4=gender1.value;//here I tried to display the gender but it is overriding
+				console.log(name1,name2);
+				
+			}
+		</script>
+
+	</body>
+</html>

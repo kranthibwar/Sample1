@@ -1,0 +1,21 @@
+input{
+color:khaki;
+background-color:cornflowerblue;
+}
+form{
+border:3px solid skyblue;
+background-color:orange;
+}
+ol{
+color:mediumturquois;
+background-color:lightcyan;
+}
+a{
+color:firebrick;
+background-color:greenyellow;
+border:3px solid orange;
+}
+ul{
+color:darkpink;
+background-color:dimgray;
+}

@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>javaScript Basics</title>
+	</head>
+	<body>
+		<h1>Inspect Element and Use console tab to see output</h1>
+		<script type="text/javascript">
+			var myName="kranthi";
+			console.log(typeof myName);
+			var phNum=6604411414;
+			console.log(typeof phNum);
+			var example=false;
+			console.log(typeof example);
+			var example1
+			console.log(typeof example1);
+			var example2=null
+			console.log(typeof example2);
+			var friends=[1,"Siddu", "Saideep", "arjun",true, "Mounith", "Varun", null];
+			console.log(typeof friends);
+			function sample(){  //Using function
+				var usingfun="kranthi"
+				console.log(typeof usingfun);
+			}
+			sample();
+			function addition(){
+				var p=10, q=5,r;
+				r=p + q;
+				console.log(r);
+				}
+				addition();//calling addition function
+			function substraction(){
+				var p=10, q=5,r;
+				r=p - q;
+				multiplication();
+				console.log(r);
+				
+				}
+				
+			function multiplication(){
+				var p=10, q=5,r;
+				r=p * q;
+				console.log(r);
+				}
+				var r=10;
+			function division(){
+				var p=10, q=5,r;
+				r=p/q;
+				substraction();
+				console.log(r);
+				
+				}
+				division();
+		
+				console.log("outside the function=",r);
+			function outside(){
+				r=r*50;
+				console.log("Inside another function=",r);
+			}
+			outside();
+
+			//calling values using arguments
+			function add(a,b){
+				var c=a+b;
+				console.log(c);
+			}
+			add(1,9);
+			add(20,5);
+
+			function sub(a,b){
+				var c=a-b;
+				console.log(c);
+			}
+			sub(5,50);
+			sub(10,3);
+
+			function mul(a,b){
+				var c=a*b;
+				console.log(c);
+			}
+			mul(2,30);
+			mul(4,3);
+			function div(a,b){
+				var c=a/b;
+				console.log(c);
+			}
+			div(30,5);
+			div(2,0);
+			div(0,0);
+			div(2,5);
+			
+		</script>
+	</body>
+</html>
